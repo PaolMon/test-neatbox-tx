@@ -1,0 +1,27 @@
+{
+  "name": "lisk-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "npx tsc create.ts && node create.js",
+    "req": "npx tsc request_own.ts && node request_own.js",
+    "res": "npx tsc response_own.ts && node response_own.js",
+    "create_view": "npx tsc create_view.ts && node create_view.js",
+    "req_view": "npx tsc request_view.ts && node request_view.js",
+    "res_view": "npx tsc response_view.ts && node response_view.js",
+    "claim": "npx tsc claim.ts && node claim.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@liskhq/lisk-client": "^5.2.1",
+    "@liskhq/lisk-cryptography": "^3.2.0",
+    "buffer-json": "^2.0.0"
+  }
+}
