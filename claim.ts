@@ -14,7 +14,7 @@ const execute = async () => {
 
         const claim_object = {
             oldMerkleRoot: Buffer.from(hash_1, 'hex'),
-            newMerkleRoot: Buffer.from(hash_3, 'hex'),
+            newMerkleRoot: Buffer.from(hash_3, 'hex'), // sha256(fileHash + newSecret)
             newMerkleHeight: 3,
             newHosts: [Buffer.from("edc97a59a29a3c632932666d891cf65c69763cac", 'hex'), Buffer.from("2ad4a2469aee2301866e2a69e0fc3aff04de69ba", 'hex'), Buffer.from("cb9b9a663d8ff0e17798bd6e169e6b9a4345ac32", 'hex')],
             newSecret: 'new_string'

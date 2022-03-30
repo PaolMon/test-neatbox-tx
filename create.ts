@@ -12,12 +12,12 @@ getClient().then(async (client: apiClient.APIClient) => {
         console.log(account)
 
         const create_object = {
-            "fileName":"mario.txt",
-            "fileSize":666,
-            "fileHash":Buffer.from(hash_1, 'hex'),
-            "merkleRoot":Buffer.from(hash_1, 'hex'),
-            "merkleHeight":0,
-            "secret":"mario"
+            "fileName":"mario.txt", // INPUT FORM
+            "fileSize":666, // fileName.length
+            "fileHash":Buffer.from(hash_1, 'hex'), // sha256(filename)
+            "merkleRoot":Buffer.from(hash_1, 'hex'), // sha256(fileHash + secret)
+            "merkleHeight":0, //0
+            "secret":"mario" // INPUT FORM
         }
 
         const unsignedTransactionC: transaction = {

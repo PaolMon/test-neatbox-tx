@@ -2,7 +2,7 @@ import { apiClient, cryptography } from "@liskhq/lisk-client";
 
 let clientCache:apiClient.APIClient;
 
-export const RPC_ENDPOINT = 'ws://localhost:8080/ws';
+export const RPC_ENDPOINT = 'ws://159.69.159.240:8080/ws';
 
 export const getClient = async () => {
     if (!clientCache) {
